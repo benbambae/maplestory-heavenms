@@ -1,4 +1,10 @@
-﻿<img src="https://heavenmssurveyhome.files.wordpress.com/2018/12/heavenmslogo.png"  width="370" height="auto">
+﻿> Fork maintained for deployment on [benkube](https://github.com/benbambae/benkube)
+> (`kubernetes/apps/maplestory/`). Build-side changes vs. upstream: `db/Dockerfile`
+> (bakes `sql/` into a MySQL image) and a trimmed, templated `config.yaml`
+> (`__DB_HOST__`/`__DB_PASSWORD__`/`__HOST_IP__` are filled in at deploy time by
+> benkube's `create-secrets.sh`, never committed here with real values).
+
+<img src="https://heavenmssurveyhome.files.wordpress.com/2018/12/heavenmslogo.png"  width="370" height="auto">
 
 ## Head developer: Ronan C. P. Lana
 
